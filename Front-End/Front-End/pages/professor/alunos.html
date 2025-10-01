@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Próximo Estágio</title>
+  <link rel="stylesheet" href="../../public/global.css">
+  <link rel="stylesheet" href="estilos/style.css">
+  <link rel="stylesheet" href="estilos/alunos.css">
+  <link rel="icon" href="../../public/imagens/favicon.png" type="image/x-icon">
+  <script src="scripts/nav.js" defer></script>
+</head>
+
+<body>
+
+  <!-- Nav Bar -->
+
+  <nav></nav>
+
+  <!-- Main -->
+
+  <div class="content cl">
+    <div class="grid-col">
+
+
+      <!-- Adicionar Alunos -->
+
+      <div class="container cl">
+        <div class="topV rw g16">
+          <span class="icon user-plus"></span>
+          <p class="TopTxt">Adicionar Alunos</p>
+        </div>
+        <div class="cl p16 g16">
+          <p>Suba uma tabela com os dados dos alunos para criar as contas automaticamente.
+            Um e-mail será enviado a cada aluno para que ele possa ativar a conta e começar a usar a
+            plataforma.</p>
+          <div>
+            <p>Dados obrigatórios do Aluno :</p>
+            <p>- Nome</p>
+            <p>- R.A.</p>
+            <p>- Email</p>
+            <p>- Semestre</p>
+          </div>
+          <button class="btn-V" onclick="document.getElementById('fileinput').click()">Subir Planilha</button>
+          <input type="file" id="fileinput">
+        </div>
+      </div>
+
+
+      <!-- Filtrar Alunos -->
+
+      <div class="container cl">
+        <div class="topC rw g16">
+          <span style="height: 40px;"></span>
+          <p class="TopTxt">Filtro de Alunos</p>
+        </div>
+        <div class="cl p16 g16 jc-sb">
+          <div class="filter-inputs">
+            <input placeholder="Nome" type="text">
+            <input placeholder="email" type="email">
+            <input placeholder="Semestre" type="number" min="1" max="6" step="1">
+          </div>
+          <button class="btn-C">Aplicar Filtros</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Lista de Alunos -->
+
+    <div class="g16 cl">
+
+      <!-- Sumário -->
+
+      <table class="container topC">
+        <colgroup>
+          <col class="col-1">
+          <col class="col-2">
+          <col class="col-3">
+          <col class="col-4">
+        </colgroup>
+        <thead>
+          <tr>
+            <th>
+              <p>Nome</p>
+            </th>
+            <th>
+              <p>R.A. do Aluno</p>
+            </th>
+            <th>
+              <div class="rw jc-sa">
+                <p>A</p>
+                <p>B</p>
+                <p>C</p>
+              </div>
+            </th>
+            <th></th>
+          </tr>
+        </thead>
+      </table>
+
+
+      <!-- Lista -->
+
+
+      <div class="tabela-alunos">
+        <table>
+
+          <colgroup>
+            <col class="col-1">
+            <col class="col-2">
+            <col class="col-3">
+            <col class="col-4">
+          </colgroup>
+
+          <tbody>
+
+            <tr>
+              <td>João da silva</td>
+              <td>30</td>
+              <td>
+
+                <div class="rw jc-sa">
+                  <span class="icon-list check"></span>
+                  <span class="icon-list off"></span>
+                  <span class="icon-list clock"></span>
+                </div>
+
+              </td>
+              <td>
+                <div class="container-icon"><a href="aluno.html"><span class="icon-link"></span></a></div>
+              </td>
+            </tr>
+
+
+            <tr>
+              <td>Ana Oliveira</td>
+              <td>25</td>
+              <td>
+
+                <div class="rw jc-sa">
+                  <span class="icon-list check"></span>
+                  <span class="icon-list eye"></span>
+                  <span class="icon-list empty"></span>
+                </div>
+
+              </td>
+              <td>
+                <div class="container-icon"><a href="aluno.html"><span class="icon-link"></span></a></div>
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+
+
+    </div>
+
+</body>
+
+
+</html>

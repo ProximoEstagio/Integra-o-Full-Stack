@@ -1,0 +1,34 @@
+.content {
+  width: 50%;
+}
+
+.ft-perfil {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: #fff 1px solid;
+}
+
+.btn-V {
+  width: 160px;
+  height: 44px;
+  padding: 12px 12px 12px 12px;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--vermelho);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  transition: all 500ms ease;
+  align-self: flex-start;
+}
+
+.btn-V img{
+  width: 20px;
+  padding-right: 3px;
+}
+
+.btn-V:hover{
+  transition: 0.5s;
+  background-color: var(--vermelho-hover);
+}
