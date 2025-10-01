@@ -1,0 +1,29 @@
+body {
+    background-color: var(--cinza);
+}
+
+.content {
+    align-items: center;
+    justify-content: center;
+    min-height: 92vh;
+}
+
+.container {
+    border-radius: 10px;
+}
+
+.btn-V {
+  width: 160px;
+  height: 44px;
+  padding: 12px 12px 12px 12px;
+  border-radius: 5px;
+  border: none;
+
+  background-color: var(--vermelho);
+
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  transition: all 500ms ease;
+  align-self: flex-end;
+}

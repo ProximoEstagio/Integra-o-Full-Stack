@@ -1,0 +1,192 @@
+
+
+/* ICONES */
+
+/* Fazer icones funcionarem */
+
+.icon-list {
+  width: 35px;
+  height: 35px;
+  background-size: 80%;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 5px;
+}
+
+/* Corpo */
+
+.user-plus {
+  background-image: url('../arquivos/icons/user-plus.svg');
+  background-color: var(--vermelho-hover);
+}
+
+/* Lista - Status */
+
+.empty {
+  background-image: url('../arquivos/icons/square-dashed.svg');
+  background-size: 70%;
+}
+
+.check {
+  background-image: url('../arquivos/icons/check.svg');
+  background-color: var(--check-50);
+  border: var(--check) 1px solid;
+}
+
+.clock {
+  background-image: url('../arquivos/icons/clock.svg');
+  background-color: var(--clock-50);
+  border: var(--clock) 1px solid;
+}
+
+.off {
+  background-image: url('../arquivos/icons/off.svg');
+  background-color: var(--off-50);
+  border: var(--off) 1px solid;
+}
+
+.eye {
+  background-image: url('../arquivos/icons/eye.svg');
+  background-color: var(--eye-50);
+  border: var(--eye) 1px solid;
+}
+
+
+
+/* MAIN */
+
+.btn-V {
+  width: 160px;
+  height: 44px;
+  padding: 12px 12px 12px 12px;
+  border-radius: 5px;
+  border: none;
+
+  background-color: var(--vermelho);
+
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  transition: all 500ms ease;
+  align-self: flex-end;
+}
+
+.btn-V:hover {
+  width: 164px;
+  cursor: pointer;
+}
+
+
+.btn-C {
+  width: 160px;
+  height: 44px;
+  padding: 12px 12px 12px 12px;
+  border-radius: 5px;
+  border: none;
+
+  background-color: var(--cinza-paleta);
+
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+
+  transition: all 350ms ease;
+  align-self: flex-end;
+}
+
+.btn-C:hover {
+  width: 164px;
+  cursor: pointer;
+}
+
+.filter-inputs {
+  width: 100%;
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+/* Tabela */
+
+col.col-1 {
+  width: 35%;
+}
+
+col.col-2 {
+  width: 15%;
+}
+
+col.col-3 {
+  width: 45%;
+}
+
+col.col-4 {
+  width: 5%
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+tr {
+  border-bottom: 1px solid var(--cor-border);
+  background-color: #fff;
+}
+
+tr:last-child {
+  border-bottom: none;
+}
+
+th {
+  background-color: var(--cinza-paleta);
+  justify-content: space-around;
+  text-align: left;
+  padding: 16px;
+}
+
+th p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+}
+
+td {
+  padding: 8px 16px 8px 16px;
+  border: none;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--cinza);
+  line-height: 1.4;
+}
+
+td:last-child {
+  padding: 0;
+}
+
+td:hover {
+  cursor: pointer;
+}
+
+.container-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tabela-alunos {
+  border: 1px solid var(--cor-border);
+  border-radius: 5px;
+  min-width: 280px;
+  overflow: hidden;
+  box-shadow: 0px 2px 16px -12px #000;
+}
+
+
