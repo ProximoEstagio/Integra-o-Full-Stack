@@ -1,0 +1,658 @@
+/* --- --- Configurações Básicas --- --- */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+:root {
+
+  /* --- --- Cores Paleta --- --- */
+
+  --vermelho: #AE0f10;
+  --vermelho-hover: #bd4242;
+  --cinza-paleta: #4b555c;
+  --cinza: #525252;
+  --cinza-claro: #c7c7c7;
+  --background-color: white;
+  --cor-border: #e1e1e1;
+
+  /* --- --- Cores Icones --- --- */
+
+  --check: #26883c;
+  --clock: #eba500;
+  --off: #cd060e;
+  --eye: #0947d7;
+  --check-50: #ecf7ef;
+  --clock-50: #fffaeb;
+  --off-50: #fdeae7;
+  --eye-50: #ebf3ff;
+
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin: 0px;
+  margin-top: 75px;
+  background-color: rgba(0, 0, 0, 0.05);
+  font-family: 'FontePadrao';
+}
+
+/* --- --- Fonte e escrita --- --- */
+
+@font-face {
+  font-family: 'FontePadrao';
+  src: url('font/Montserrat-VariableFont_wght.ttf') format('truetype');
+}
+
+p {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--cinza);
+  line-height: 1.4;
+  text-align: justify;
+  font-family: 'FontePadrao';
+}
+
+a {
+  text-decoration: none;
+  font-family: 'FontePadrao';
+}
+
+/* --- --- Orientação DIV --- --- */
+
+.cl {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.rw {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+}
+
+.cc {
+  justify-content: center;
+  align-items: center;
+}
+
+/* --- --- Classes básicas --- --- */
+
+/* --- --- Gap --- --- */
+
+.g4 {
+  gap: 4px;
+}
+
+.g8 {
+  gap: 8px;
+}
+
+.g16 {
+  gap: 16px;
+}
+
+.g32 {
+  gap: 32px;
+}
+
+/* --- --- Padding --- --- */
+
+.p4 {
+  padding: 4px;
+}
+
+.p8 {
+  padding: 8px;
+}
+
+.p16 {
+  padding: 16px;
+}
+
+.p32 {
+  padding: 32px;
+}
+
+/* --- --- Justify-Content --- --- */
+
+.jc-sb {
+  justify-content: space-between;
+}
+
+.jc-sa {
+  justify-content: space-around;
+}
+
+.al-fs {
+  align-items: flex-start;
+}
+
+.al-fe {
+  align-items: flex-end;
+}
+
+/* --- --- Width --- --- */
+
+.w10c {
+  width: 10%;
+}
+
+.w15c {
+  width: 15%;
+}
+
+.w20c {
+  width: 20%;
+}
+
+.w28c {
+  width: 28%;
+}
+
+.w35c {
+  width: 35%;
+}
+
+.w45c {
+  width: 45%;
+}
+
+.w80c {
+  width: 80%;
+}
+
+/* --- --- Font Size --- --- */
+
+.fs16 {
+  font-size: 16px;
+}
+
+.fs18 {
+  font-size: 18px;
+}
+
+.fs28 {
+  font-size: 28px;
+}
+
+.fs36 {
+  font-size: 36px;
+}
+
+/* --- --- Botões --- --- */
+
+/* --- --- Configuração botão normal --- --- */
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  width: 100%;
+  height: 44px;
+  padding: 12px 12px 12px 12px;
+  border-radius: 5px;
+  border: none;
+
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+
+  transition: all 500ms ease;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/* --- --- Botão Vermelho --- --- */
+
+.btn-V {
+  background-color: var(--vermelho);
+  color: #fff;
+}
+
+.btn-V>p {
+  color: #fff;
+}
+
+.btn-V:hover {
+  background-color: #ff8989;
+}
+
+/* --- --- Botão Cinza --- --- */
+
+.btn-C {
+  background-color: var(--cinza-paleta);
+  color: #fff;
+}
+
+.btn-C>p {
+  color: #fff;
+}
+
+.btn-C:hover {
+  background-color: var(--cinza-paleta);
+}
+
+/* --- --- Botão Arquivo --- --- */
+
+.btn-F {
+  background-color: #fff;
+  border: dashed 2px var(--cor-border);
+  color: var(--cinza-paleta);
+}
+
+.btn-F:hover {
+  border: solid 2px var(--cinza-paleta);
+}
+
+/* --- --- Botão Link --- --- */
+
+.btn-link {
+  background-color: #fff;
+  color: var(--cinza-paleta);
+  border: 1px solid var(--cinza-paleta);
+  align-self: flex-end;
+  width: fit-content;
+}
+
+.fc {
+  width: fit-content;
+}
+
+
+
+
+
+
+
+/* --- --- NAV BAR --- --- */
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  height: 75px;
+  background-color: var(--vermelho);
+  align-items: center;
+  box-shadow: 0px 2px 16px -12px #000;
+}
+
+.nav-content {
+  width: 80%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: var(--vermelho);
+}
+
+/* --- --- NAV BAR - Container Esquerda --- --- */
+
+.nav-left {
+  gap: 32px;
+  width: fit-content;
+  height: fit-content;
+
+  background-color: var(--vermelho);
+}
+
+.nav-logo {
+  width: 50px;
+  height: 50px;
+}
+
+.nav-options {
+  gap: 8px;
+  width: fit-content;
+  align-items: center;
+
+}
+
+/* --- --- NAV BAR - Perfil direita --- --- */
+
+.nav-perfil {
+  padding: 5px 10px 5px 10px;
+  gap: 16px;
+  border-radius: 5px;
+  width: fit-content;
+  align-items: center;
+  transition: all 500ms ease;
+
+  background-color: var(--vermelho);
+}
+
+.nav-perfil:hover {
+  background-color: var(--vermelho-hover);
+}
+
+.foto-perfil {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: #fff 1px solid;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.email {
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  opacity: 80%;
+}
+
+
+
+
+
+
+
+
+
+
+/* --- --- ICONES --- --- */
+
+/* --- --- Fazer icones funcionarem --- --- */
+
+.icon {
+  width: 40px;
+  height: 40px;
+  background-size: 70%;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 5px;
+  transition: all 500ms ease;
+}
+
+.icon-nav {
+  width: 40px;
+  height: 40px;
+  background-size: 70%;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 5px;
+  transition: all 500ms ease;
+}
+
+.icon-nav:hover {
+  background-color: var(--vermelho-hover);
+}
+
+.icon-list {
+  min-width: 35px;
+  height: 35px;
+  background-size: 80%;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 5px;
+}
+
+.icon-link {
+  height: 25px;
+  width: 25px;
+  background-size: 80%;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 5px;
+  background-image: url('icons/link.svg');
+}
+
+
+/* --- --- Icones --- --- */
+
+/* --- --- Nav Bar --- --- */
+
+.home {
+  background-image: url('icons/home.svg');
+}
+
+.file-text {
+  background-image: url('icons/file-text.svg');
+}
+
+.question {
+  background-image: url('icons/question.svg');
+}
+
+.users {
+  background-image: url('icons/users.svg');
+}
+
+.square-pencil {
+  background-image: url('icons/square-pencil.svg');
+}
+
+/* --- --- Status --- --- */
+
+.empty {
+  background-image: url('icons/square-dashed.svg');
+  background-size: 70%;
+}
+
+.check {
+  background-image: url('icons/check.svg');
+  background-color: var(--check-50);
+  border: var(--check) 1px solid;
+}
+
+.clock {
+  background-image: url('icons/clock.svg');
+  background-color: var(--clock-50);
+  border: var(--clock) 1px solid;
+}
+
+.off {
+  background-image: url('icons/off.svg');
+  background-color: var(--off-50);
+  border: var(--off) 1px solid;
+}
+
+.eye {
+  background-image: url('icons/eye.svg');
+  background-color: var(--eye-50);
+  border: var(--eye) 1px solid;
+}
+
+/* --- --- Variados --- --- */
+
+.close {
+  background-image: url('icons/close.svg');
+}
+
+.link-btn {
+  background-image: url('icons/link.svg');
+  background-size: 100%;
+  height: 18px;
+  width: 18px;
+}
+
+.pencil {
+  height: 25px;
+  width: 25px;
+  background-image: url('icons/pencil.svg');
+  background-size: 85%;
+}
+
+.user-plus {
+  background-image: url('icons/user-plus.svg');
+  background-color: var(--vermelho-hover);
+}
+
+.filter {
+  background-image: url('icons/filter.svg');
+  background-color: var(--vermelho-hover);
+}
+
+.file {
+  background-image: url('icons/file.svg');
+  background-size: 90%;
+  width: 100px;
+  height: 100px;
+
+}
+
+
+
+
+
+
+
+/* MAIN */
+
+.content {
+  width: 70%;
+  height: 100%;
+  padding-top: 32px;
+  padding-bottom: 64px;
+  gap: 32px;
+}
+
+.container {
+  border: var(--cor-border) 1px solid;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0px 2px 16px -12px #000;
+  min-width: 280px;
+  background-color: #fff;
+}
+
+/* PROCURAR SE ALGUMA COISA USA ESSA CLASSE */
+
+.container-150 {
+  border: var(--cor-border) 1px solid;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0px 2px 16px -12px #000;
+  min-width: 150px;
+  background-color: #fff;
+}
+
+.grid-col {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+  width: 100%;
+}
+
+/* PROCURAR SE ALGUMA COISA USA ESSA CLASSE */
+
+.grid-150 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 32px;
+  width: 100%;
+}
+
+.topV {
+  padding: 16px;
+  height: fit-content;
+  background-color: var(--vermelho);
+}
+
+.topC {
+  padding: 16px;
+  height: fit-content;
+  background-color: var(--cinza-paleta);
+}
+
+.TopTxt {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.filter-inputs {
+  width: 100%;
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  width: 100%;
+  height: 40px;
+  padding: 4px 12px 4px 12px;
+  border: var(--cor-border) 1px solid;
+  border-radius: 5px;
+
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--cinza);
+
+  transition: all 350ms ease;
+}
+
+::placeholder {
+  color: var(--cinza-claro);
+}
+
+
+@media screen {}
+
+
+.hidden {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  padding: 100px;
+  background-color: rgba(0, 0, 0, 0.333);
+
+  backdrop-filter: blur(5px);
+  pointer-events: none;
+  opacity: 0;
+  transition: 500ms;
+}
+
+.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.popup {  /* Mudar isso aqui */
+  width: fit-content;
+  max-width: 60%;
+  background-color: #ffffff;
+  border: 1px solid var(--cor-border);
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0px 2px 16px -12px #000;
+  transform: scale(0.5) ease-in-out;
+  transition: 500ms;
+}
+
+.active .popup {
+  transform: scale(1);
+}
