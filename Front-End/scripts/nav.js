@@ -20,8 +20,8 @@ document.addEventListener("DOMContentLoaded", function () {
       <a href="perfil.html">
         <div class="nav-perfil rw">
           <div class="cl">
-            <p class="name">Carlos Roberto Pinheiro</p>
-            <p class="email">Carlos.pinheiro8@fatec.sp.gov.br</p>
+            <p class="name">Silvia Maria Farani Costa</p>
+            <p class="email">Silvia.Costa8@fatec.sp.gov.br</p>
           </div>
           <img src="arquivos/imagens/silvia.png" alt="foto de perfil" class="foto-perfil">
           <img src="arquivos/icons/teacher.png" style="width: 42px;">
