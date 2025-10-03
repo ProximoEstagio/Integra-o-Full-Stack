@@ -206,7 +206,7 @@ p {
 /* NAV BAR -- Perfil na direita */
 
 .nav-perfil {
-  padding: 5px 10px 5px 10px;
+  padding: 0px 10px;
   gap: 16px;
   border-radius: 5px;
   width: fit-content;
@@ -423,6 +423,7 @@ input {
   bottom: 0;
   background-color: #ccc;
   transition: .4s;
+  
 }
 
 .slider:before {
@@ -447,7 +448,7 @@ input:checked + .slider:before {
 
 .slider.round {
   border-radius: 34px;
-}
+  }
 
 .slider.round:before {
   border-radius: 55%;
@@ -459,4 +460,19 @@ input:checked + .slider:before {
 }
 
 
-@media screen {}
+@media (max-width:848px) {
+  .name {
+  font-size: 19px;
+  font-weight: 400;
+  color: #fff;
+  box-sizing: border-box;
+  }
+
+.email {
+  font-size: 10px;
+  font-weight: 400;
+  color: #fff;
+  opacity: 80%;
+  box-sizing: border-box;
+}
+}
