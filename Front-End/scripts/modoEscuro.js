@@ -1,21 +1,25 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const toggleSwitch = document.getElementById("theme-toggle");
-  if (!toggleSwitch) return; // segurança
+  const toggleSwitch = document.getElementById("alternador");
+  if (!toggleSwitch) return; 
 
-  // Resto da lógica
-  const currentTheme = localStorage.getItem("theme");
-  if (currentTheme === "dark") {
-    document.documentElement.setAttribute("data-theme", "dark");
+
+  
+
+  const temaAtual = localStorage.getItem("tema");
+  if (temaAtual === "dark") {
+    document.documentElement.setAttribute("modo-escuro", "dark");
     toggleSwitch.checked = true;
   }
 
   toggleSwitch.addEventListener("change", () => {
     if (toggleSwitch.checked) {
-      document.documentElement.setAttribute("data-theme", "dark");
-      localStorage.setItem("theme", "dark");
+      document.documentElement.setAttribute("modo-escuro", "dark");
+      localStorage.setItem("tema", "dark");
     } else {
-      document.documentElement.setAttribute("data-theme", "light");
-      localStorage.setItem("theme", "light");
+      document.documentElement.setAttribute("modo-escuro", "light");
+      localStorage.setItem("tema", "light");
     }
   });
 });
+
+

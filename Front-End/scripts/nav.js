@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
           </div>
         </a>
         <label class="switch rw">
-          <input type="checkbox" id="theme-toggle">
+          <input type="checkbox" id="alternador">
           <span class="slider round"></span>
         </label>
       </div>
@@ -43,3 +43,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 })
+
+
+

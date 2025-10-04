@@ -42,9 +42,11 @@ font-family:'FontePadrao';
   
 }
 
-[data-theme="dark"] {
+[modo-escuro="dark"] {
   --fundo: #525252;
 }
+
+
 
 body {
   display: flex;
