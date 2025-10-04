@@ -1,18 +1,19 @@
+
+
 document.addEventListener("DOMContentLoaded", () => {
-  const toggleSwitch = document.getElementById("alternador");
-  if (!toggleSwitch) return; 
+  const AlternadorDeModo = document.getElementById("alternador");
+  if (!AlternadorDeModo) return; 
 
 
-  
 
   const temaAtual = localStorage.getItem("tema");
   if (temaAtual === "dark") {
     document.documentElement.setAttribute("modo-escuro", "dark");
-    toggleSwitch.checked = true;
+    AlternadorDeModo.checked = true;
   }
 
-  toggleSwitch.addEventListener("change", () => {
-    if (toggleSwitch.checked) {
+  AlternadorDeModo.addEventListener("change", () => {
+    if (AlternadorDeModo.checked) {
       document.documentElement.setAttribute("modo-escuro", "dark");
       localStorage.setItem("tema", "dark");
     } else {
