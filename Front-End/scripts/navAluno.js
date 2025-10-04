@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
           </div>
         </a>
         <label class="switch rw">
-          <input type="checkbox" checked>
+          <input type="checkbox" id="theme-toggle">
           <span class="slider round"></span>
         </label>
       </div>

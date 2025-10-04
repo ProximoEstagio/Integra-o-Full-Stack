@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
       </div>
 
       <div class="wrapper">
-        <a href="perfilAluno.html">
+        <a href="perfil.html">
           <div class="nav-perfil rw">
             <div class="cl">
               <p class="name">Silvia Maria Farani Costa</p>
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
           </div>
         </a>
         <label class="switch rw">
-          <input type="checkbox" checked>
+          <input type="checkbox" id="theme-toggle">
           <span class="slider round"></span>
         </label>
       </div>
