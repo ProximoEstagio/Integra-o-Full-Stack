@@ -31,4 +31,5 @@
 .btn-V:hover{
   transition: 0.5s;
   background-color: var(--vermelho-hover);
+  cursor: pointer;
 }

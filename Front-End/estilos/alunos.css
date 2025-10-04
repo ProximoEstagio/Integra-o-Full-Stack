@@ -1,4 +1,4 @@
-
+@import url(style.css);
 
 /* ICONES */
 
@@ -131,12 +131,9 @@ table {
   width: 100%;
   table-layout: fixed;
   border-collapse: collapse;
+
 }
 
-tr {
-  border-bottom: 1px solid var(--cor-border);
-  background-color: #fff;
-}
 
 tr:last-child {
   border-bottom: none;
